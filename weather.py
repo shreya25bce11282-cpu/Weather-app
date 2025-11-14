@@ -5,9 +5,9 @@ from tkinter import scrolledtext #Provides a scrollable text widget for output a
 
 # Function to get weather details
 def get_weather(city): #Starts a function that fetches weather for a specific city.
-    api_key = "dc27c8d2539943072490651c8a3838bc"  #API key for OpenWeatherMap.
+    api_key = "ENTER SECRET KEY"  #API key for OpenWeatherMap.
     #Constructs the API request URL using the city name and your API key
-    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid=dc27c8d2539943072490651c8a3838bc"
+    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid=ENTER SECRET KEY"
     response = requests.get(url) #Sends the request to OpenWeatherMap’s server
     if response.status_code == 200: #Checks if the request was successful (status code 200 means OK)
         data = response.json() #Parses the JSON response into a Python dictionary
